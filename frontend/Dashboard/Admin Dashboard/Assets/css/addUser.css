@@ -1,0 +1,208 @@
+/* IMPORT COMMON CSS */
+@import url("../../../../Assets/css/theme.css");
+
+
+/*--------------
+ Header - start 
+---------------*/
+#dashboardHeader{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+#dashboardHeader .logoAndBars{
+    width: 200px;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+#dashboardHeader .logoAndBars i{
+    display: none;
+    font-size:  25px;
+}
+#dashboardHeader .profile{
+    width: 40px;
+    height: 40px;
+}
+#dashboardHeader .profile img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+/*--------------
+ Header - End 
+---------------*/
+
+
+
+#dashboardContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+
+/*--------------------------
+ Dashboard Right side - start 
+---------------------------*/
+#dashboardContainer .rightSide{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+/*------------------
+  Add User   - start 
+-------------------*/
+#registerSection{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 0px;
+}
+#registerSection .container{
+    position: relative;
+    width: 400px;
+    height: 440px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#registerSection .container .formBox h3{
+    margin: 20px 0px 40px 0px;
+    font-size: 24px;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+#registerSection .container form .formBox{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+#registerSection .container form .formBox:nth-child(1){
+  background-color: white;
+  z-index: 3;
+}
+#registerSection .container form .formBox:nth-child(2){
+    background-color: white;
+    z-index: 2;
+  }
+  #registerSection .container form .formBox:nth-child(3){
+    background-color: white;
+    z-index: 1;
+}
+
+#registerSection .container form .formBox input{
+    width: 70%;
+    padding: 13px;
+    margin-bottom: 15px;
+    border: none;
+    outline: none;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: .6px;
+}
+#registerSection .container form .formBox .redio{
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  height: 50px;
+}
+#registerSection .container form .formBox .redio input{
+  box-shadow: none;
+  border: none;
+  padding: 0px;
+  margin: 0px;
+}
+#registerSection .container form .formBox .button button{
+    margin: 20px 0px;
+}
+
+/*------------------
+  Add user - End 
+-------------------*/
+
+/*----------------------
+     media Query - Start 
+-----------------------*/
+
+/*----------------
+ Add user - start
+--------------- */
+@media screen and (max-width: 450px) {
+    #registerSection{
+        width: 100%;
+        height: 100%;
+    }
+    #registerSection .container{
+      box-shadow: none;
+    }
+    #registerSection .container .formBox{
+        width: 100%;
+        height: 100%;
+    }
+    #registerSection .container form .formBox input{
+      width: 80%;       
+    }
+  }
+  /*---------------
+   Add User - End
+  -------------- */
+
+
+/*--------------------------
+ Dashboard Right side - End 
+---------------------------*/
+
+
+
+/*---------------------
+ Media Query - start 
+----------------------*/
+
+@media screen and (max-width: 615px) {
+    #dashboardContainer .rightSide .addCategoryForm{
+        width: 100%;
+        height: 100%;
+    }
+    #dashboardContainer .rightSide .addCategoryForm .container{
+        width: 100%;
+        height: 100%;
+        box-shadow: none;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    
+    #dashboardContainer .rightSide .addCategoryForm .container input,
+    #dashboardContainer .rightSide .addCategoryForm .container textarea,
+    #dashboardContainer .rightSide .addCategoryForm .container p
+    {
+        width: 80%;
+    }
+  }
+
+
+/*---------------------
+ Media Query - End 
+----------------------*/
+

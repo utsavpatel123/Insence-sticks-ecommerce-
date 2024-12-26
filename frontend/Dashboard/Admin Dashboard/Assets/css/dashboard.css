@@ -1,0 +1,94 @@
+/* IMPORT COMMON CSS */
+@import url("../../../../Assets/css/theme.css");
+
+
+/*--------------------------
+ Dashboard Right side - start 
+---------------------------*/
+#dashboardContainer .rightSide{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+}
+/* Admin home page */
+#dashboardContainer .rightSide .detailSection{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+#dashboardContainer .rightSide .detailSection .detailSectionContainer{
+    width: 95%;
+     display: flex;
+     justify-content: start;
+    grid-gap: 10px;
+    flex-wrap: wrap;
+    overflow: scroll;
+    scrollbar-width: none;
+    margin-left: 60px;
+}
+#dashboardContainer .rightSide .detailContainer{
+    margin-right: 20px;
+    width: 300px;
+    height: 150px;
+    position: relative;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-top: 40px;
+    border-radius: 8px;
+}
+#dashboardContainer .rightSide .detailContainer .imageContainer{
+    width: 70px;
+    height: 60px;
+    top: 20px;
+    right: 30px;
+    position: absolute;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+#dashboardContainer .rightSide .detailContainer .imageContainer .image{
+    width: 75px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#dashboardContainer .rightSide .detailContainer .imageContainer .image i{
+    font-size: 40px;
+}
+#dashboardContainer .rightSide .detailContainer .detail{
+    width: 80%;
+    position: absolute;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 25px; 
+}
+#dashboardContainer .rightSide .detailContainer .detail h6, .detail p{
+    font-size: var(--extraLargeFont);
+    font-weight: var(--midiumFontWeight);
+}
+#dashboardContainer .rightSide .detailSection .detailSectionContainer .moreInfo {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid rgb(204, 197, 197);
+    padding: 5px 0px;
+} 
+
+
+
+/*--------------------------
+ Dashboard Right side - End 
+---------------------------*/
+

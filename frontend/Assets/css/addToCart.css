@@ -1,0 +1,172 @@
+@import url('theme.css');
+  
+/*-- ---------------------
+  Cart Section - Start 
+-------------------------*/
+#cart{
+  width: 100%;
+  height: 100%;
+}
+#cart .cartTitle{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: rgb(10, 143, 167);
+
+}
+#cart .cartTitle p{
+  font-size: 30px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+#cart .cartContainer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#cart .cartContainer .cartDetail{
+  width: 90%;
+}
+#cart .cartContainer .cartDetail .cartDetailHeading{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(21, 145, 167);
+  /* background-color: rgb(136, 223, 238); */
+  border-radius: 4px;
+
+}
+#cart .cartContainer .cartDetail .cartDetailHeading p{
+  font-size: 15px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #fff;
+}
+#cart .cartContainer .cartDetail .cartDetailRow{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+#cart .cartContainer .cartDetail .cartDetailRow div{
+  width: 100px;
+  font-size: 15px;
+  font-weight: 500;
+}
+#cart .cartContainer .cartDetail .cartDetailRow .imageContainer{
+  width: 100px;
+  height: 100px;
+  border: 1px solid rgb(223, 215, 215);
+}
+#cart .cartContainer .cartDetail .cartDetailRow .imageContainer img{
+  width: 100%;
+  height: 100%;
+}
+#cart .cartContainer .cartDetail .cartDetailRow .productQuantity{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  grid-gap: 20px;
+}
+#cart .cartContainer .cartDetail .cartDetailRow .productQuantity input{
+    width: 60px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid rgb(223, 215, 215);
+    outline: none;
+  }
+  #cart .cartContainer .cartDetail .discountCoupon{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgb(223, 215, 215);
+    border-bottom: 1px solid rgb(223, 215, 215);
+    padding: 50px 0px;
+  }
+  #cart .cartContainer .cartDetail .discountCoupon input{
+    width: 300px;
+    height: 40px;
+    padding-left: 10px;
+    border: 1px solid rgb(223, 215, 215);
+    font-size: 15px;
+    font-weight: 500;
+    outline: none;
+} 
+#cart .cartContainer .cartDetail .discountCoupon button{
+  padding: 10px 20px;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 20px;
+  /* background-color: rgb(95, 93, 93); */
+  background-color: rgb(10, 143, 167);
+  color: #fff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+} 
+#cart .cartContainer .cartDetail .cartTotal{
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+#cart .cartContainer .cartDetail .cartTotal .total{
+  width: 600px;
+  height: 50px;
+  /* border: 1px solid rgb(226, 218, 218); */
+  /* background-color: #f8f1f1; */
+  background-color: rgb(241, 244, 245);
+  color: #000;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+     font-size: 15px;
+     font-weight: 600;
+     border-radius: 5px;
+    }
+  #cart .cartContainer .cartDetail .totalPrice{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+  }
+  #cart .cartContainer .cartDetail .totalPrice p{
+    font-size: 20px;
+    font-weight: 600;
+  }
+  #cart .cartContainer .cartDetail .checkoutButton{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+  }
+  #cart .cartContainer .cartDetail .checkoutButton a{
+    background-color: rgb(10, 143, 167);
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .7px;
+    border-radius: 20px;
+    /* background-color: rgb(95, 93, 93); */
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+
+
+
+
+
+
+
+
+ /*-- ---------------------
+  Cart Section - End 
+-------------------------*/

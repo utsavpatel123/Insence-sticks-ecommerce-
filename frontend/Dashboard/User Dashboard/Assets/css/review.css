@@ -1,0 +1,163 @@
+/* IMPORT COMMON CSS */
+@import url("../../../../Assets/css/theme.css");
+
+
+
+/*--------------------------
+ Dashboard Right side - start 
+---------------------------*/
+#dashboardContainer .rightSide{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*-------------------
+Review Form - Start
+--------------------*/
+
+#dashboardContainer .rightSide .reviewForm{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#dashboardContainer .rightSide .reviewForm .container{
+    position: relative;
+    width: 600px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    text-align: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+}
+
+#dashboardContainer .rightSide .reviewForm .container h3{
+    width: 100%;
+}
+#dashboardContainer .rightSide .reviewForm .container form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#dashboardContainer .rightSide .reviewForm .container h3{
+    margin: 20px 0px 10px 0px;
+    font-size: 24px;
+}
+#dashboardContainer .rightSide .reviewForm .container input{
+    width: 400px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    font-size: 14px;
+    font-weight: var(--midiumFontWeight);
+    outline: none;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;    
+    text-shadow: 3px 3px 2px rgba(36, 79, 248, 0.25); 
+}
+#dashboardContainer .rightSide .reviewForm .container select{
+    width: 420px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    font-size: 14px;
+    font-weight: var(--midiumFontWeight);
+    outline: none;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;    
+    text-shadow: 3px 3px 2px rgba(36, 79, 248, 0.25);    
+}
+#dashboardContainer .rightSide .reviewForm .container p{
+    width: 400px;
+    text-align: start;
+    font-size: 14px;
+    padding: 10px;
+    text-shadow: 3px 3px 2px rgba(36, 79, 248, 0.25);    
+}
+#dashboardContainer .rightSide .reviewForm .container textarea{
+    width: 400px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    font-size: 14px;
+    font-weight: var(--midiumFontWeight);
+    outline: none;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;    
+    text-shadow: 3px 3px 2px rgba(36, 79, 248, 0.25);    
+}
+#dashboardContainer .rightSide .reviewForm .container .ratingStar{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+
+#dashboardContainer .rightSide .reviewForm .container .ratingStar .stars{
+    margin: 0px 10px 10px;
+}
+#dashboardContainer .rightSide .reviewForm .container .ratingStar .stars span{
+    
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+#dashboardContainer .rightSide .reviewForm .container .ratingStar .stars span.active{
+    color: rgb(255, 136, 0);
+    text-shadow: 3px 3px 2px rgba(36, 79, 248, 0.25);    
+
+}
+/*-------------------
+ review Form - End
+--------------------*/
+
+/*--------------------------
+ Dashboard Right side - End 
+---------------------------*/
+
+
+
+/*---------------------
+ Media Query - start 
+----------------------*/
+
+/*-------------------
+Support Form - Start
+--------------------*/
+@media screen and (max-width: 615px) {
+    #dashboardContainer .rightSide .reviewForm{
+        width: 100%;
+        height: 100%;
+    }
+    #dashboardContainer .rightSide .reviewForm .container{
+        width: 100%;
+        height: 100%;
+        box-shadow: none;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    
+    #dashboardContainer .rightSide .reviewForm .container select,
+    #dashboardContainer .rightSide .reviewForm .container input,
+    #dashboardContainer .rightSide .reviewForm .container textarea,
+    #dashboardContainer .rightSide .reviewForm .container p,
+    #dashboardContainer .rightSide .reviewForm .container .ratingStar{
+      width: 80%;
+    }
+
+  }
+/*-------------------
+Support Form - End
+--------------------*/
+
+/*---------------------
+ Media Query - End 
+----------------------*/
+

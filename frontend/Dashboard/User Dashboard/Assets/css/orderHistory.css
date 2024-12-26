@@ -1,0 +1,103 @@
+/* IMPORT COMMON CSS */
+@import url("../../../../Assets/css/theme.css");
+
+/*--------------------------
+ Dashboard Right side - start 
+---------------------------*/
+#dashboardContainer .rightSide{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+}
+.rightSide .orderHistoryBox {
+    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    border-radius: 6px;
+    margin-top: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.orderHistoryBox ul {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    position: relative;
+}
+
+.orderHistoryBox #headerOflist {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: rgb(12, 168, 196);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;
+}
+
+.orderHistoryBox ul li {
+    min-height: 50px;
+    width: 100%;
+    position: relative;
+    list-style: none;
+    display: flex;
+    text-align: center;
+    align-content: flex-start;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.orderHistoryBox ul li div {
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
+    font-weight: 900;
+    width: 100%;
+    position: relative;
+    justify-content: center;
+}
+
+.listOfHistory div {
+    font-weight: 400 !important;
+}
+
+.action .actionbox {
+    height: 100%;
+    border-left: 1px solid silver;
+    /* border-radius: 12px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    transition: all ease 0.5s;
+}
+
+.action .actionbox div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 30%; */
+    font-size: 13px;
+}
+.action .actionbox div a{
+    font-size: 13px;
+}
+
+
+/*--------------------------
+ Dashboard Right side - End 
+---------------------------*/
+
+
+/*---------------------
+   orderHistory - end 
+----------------------*/
+

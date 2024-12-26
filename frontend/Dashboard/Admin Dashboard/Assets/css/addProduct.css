@@ -1,0 +1,159 @@
+/* IMPORT COMMON CSS */
+@import url("../../../../Assets/css/theme.css");
+
+
+#dashboardContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+/*--------------------------
+ Dashboard Right side - start 
+---------------------------*/
+#dashboardContainer .rightSide{
+    width: 100%;
+    height: 88vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    /* overflow: scroll; */
+    /* scrollbar-width: none; */
+}
+
+
+#dashboardContainer .rightSide .addProductForm{
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#dashboardContainer .rightSide .addProductForm .container{
+    position: relative;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    text-align: center;
+    padding: 30px 0px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+}
+
+#dashboardContainer .rightSide .addProductForm .container h3{
+    width: 100%;
+}
+#dashboardContainer .rightSide .addProductForm .container form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#dashboardContainer .rightSide .addProductForm .container h3{
+    margin: 0px 0px 20px 0px;
+    font-size: 24px;
+}
+#dashboardContainer .rightSide .addProductForm .container input{
+    width: 400px;
+    padding: 10px;
+    border: none;
+    font-size: 14px;
+    font-weight: var(--midiumFontWeight);
+    outline: none;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;    
+    text-shadow: 3px 3px 2px rgba(36, 79, 248, 0.25); 
+}
+#dashboardContainer .rightSide .addProductForm .container label{
+    width: 400px;
+    padding: 10px;
+    border: none;
+    font-size: 14px;
+    font-weight: var(--midiumFontWeight);
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+#dashboardContainer .rightSide .addProductForm .container p{
+    width: 400px;
+    text-align: start;
+    font-size: 14px;
+    padding: 10px;
+    text-shadow: 3px 3px 2px rgba(36, 79, 248, 0.25);   
+}
+#dashboardContainer .rightSide .addProductForm .container textarea{
+    width: 400px;
+    padding: 10px;
+    border: none;
+    font-size: 14px;
+    font-weight: var(--midiumFontWeight);
+    outline: none;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;    
+    text-shadow: 3px 3px 2px rgba(36, 79, 248, 0.25);    
+}
+
+#dashboardContainer .rightSide .addProductForm .container select{
+    width: 420px;
+    padding: 10px;
+    border: none;
+    font-size: 14px;
+    font-weight: var(--midiumFontWeight);
+    outline: none;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;    
+    text-shadow: 3px 3px 2px rgba(36, 79, 248, 0.25);
+}
+/*---------------------
+ add category Form - End
+----------------------*/
+
+/*--------------------------
+ Dashboard Right side - End 
+---------------------------*/
+
+
+
+/*---------------------
+ Media Query - start 
+----------------------*/
+
+/*-----------------------
+ Add Product Form - start 
+------------------------*/
+
+@media screen and (max-width: 615px) {
+    #dashboardContainer .rightSide .addProductForm{
+        width: 100%;
+        height: 100%;
+    }
+    #dashboardContainer .rightSide .addProductForm .container{
+        width: 100%;
+        height: 100%;
+        box-shadow: none;
+    }
+  }
+
+@media screen and (max-width: 550px){
+    #dashboardContainer .rightSide .addProductForm .container select,
+    #dashboardContainer .rightSide .addProductForm .container input,
+    #dashboardContainer .rightSide .addProductForm .container textarea,
+    #dashboardContainer .rightSide .addProductForm .container label{
+        width: 80%;
+    }
+}
+
+
+/*-----------------------
+ Add Product Form - end 
+------------------------*/
+
+/*---------------------
+ Media Query - End 
+----------------------*/
+

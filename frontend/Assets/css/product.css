@@ -1,0 +1,135 @@
+/* IMPORT COMMON CSS */
+@import url("theme.css");
+
+/*--------------
+Product - start
+------------- */
+#product{
+  width: 100%;
+}
+#product .productTitle{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+#product .productTitle p{
+  font-size: 30px;
+  font-weight: 800;
+  text-transform: capitalize;
+}
+#product .productTitle p span{
+  font-size: 30px;
+  font-weight: 800;
+  text-transform: capitalize;
+  color: rgb(12, 168, 196);
+  letter-spacing: 1px;
+}
+#product .productMenu{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#product .productMenu .menu{
+  width: 80%;
+  height: 50px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  /* border: 1px solid rgb(230, 222, 222); */
+}
+#product .productMenu .menu p{
+  font-size: 17px;
+  color: rgb(12, 11, 11);
+  font-weight: 500;
+}
+#product .productMenu .menu select{
+  width: 200px;
+  height: 30px;
+  border: 1px solid rgb(230, 222, 222);
+  background-color: white;
+  font-size: 14px;
+  outline: none;
+  margin: 0px 20px;
+  color: rgb(92, 89, 89);
+}
+#product .productContainer{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  grid-gap: 20px;
+  margin-bottom: 20px;
+}
+
+.individualProductBox{
+  width: 320px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* border: 1px solid rgb(223, 215, 215); */
+  padding: 15px;
+}
+.individualProductBox .individualProductImageContainer{
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+}
+.individualProductBox .individualProductImageContainer img{
+  width: 100%;
+  height: 100%;
+}
+.individualProductBox p {
+   font-size: 16px;
+   font-weight: 700;
+   text-transform: uppercase;
+   color: rgb(119, 114, 114);  
+}
+.individualProductBox .productRating * {
+  font-size: 25px;
+}
+  .rate {
+  color: gold;
+}
+#product .sliderButton{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#product .sliderButton button{
+  width: 35px;
+  height: 35px;
+  border: 1px solid rgb(197, 186, 186);
+  background-color: rgb(236, 230, 230);
+  border-radius: 4px;
+}
+
+
+
+
+/*--------------
+Product - End
+------------- */
+
+/*----------------------
+   media Query - Start 
+-----------------------*/
+
+
+/*------------------
+   Product - start 
+-------------------*/
+@media screen and (max-width: 700px) {
+
+}
+/*------------------
+   Product - End 
+-------------------*/
+
+/*----------------------
+   media Query - End 
+-----------------------*/

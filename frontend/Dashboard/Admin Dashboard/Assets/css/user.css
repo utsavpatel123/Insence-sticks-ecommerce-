@@ -1,0 +1,240 @@
+/* IMPORT COMMON CSS */
+@import url("../../../../Assets/css/theme.css");
+
+/*--------------------------
+ Dashboard Right side - start 
+---------------------------*/
+#dashboardContainer .rightSide{
+    width: 100%;
+    height: 88vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    overflow: scroll;
+}
+/* user Information */
+#dashboardContainer .rightSide .userContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+}
+#dashboardContainer .tableDataContainer{
+    width: 98%;
+    overflow-x: auto;
+    overflow-y: auto;
+    scrollbar-width: none;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#dashboardContainer .rightSide .usersTable{
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+#dashboardContainer .rightSide .usersTable table{
+    width: 100%;
+    min-width: 1200px;
+}
+#dashboardContainer .rightSide .usersTable table td, th{
+    padding: 10px;
+    height: 40px;
+}
+#dashboardContainer .rightSide .usersTable table td{
+    height: 30px;
+}
+
+#dashboardContainer .rightSide .usersTable table th{
+    position: sticky;
+    top: 0px;
+    z-index: 5;
+}
+#dashboardContainer .rightSide .usersTable #table .tableHeading{
+    background-color: rgb(12, 168, 196);
+    color: white;
+}
+#dashboardContainer .rightSide .usersTable #table tr{
+    position: relative;
+    z-index: 2;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+#dashboardContainer .rightSide .usersTable table{
+    border-spacing: 0; 
+    border-collapse: collapse;
+}
+#dashboardContainer .rightSide .usersTable td .userProfile{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+}
+
+#dashboardContainer .rightSide .usersTable td .userImage{
+        width: 40px;
+        height: 40px;
+        margin-right: 20px;
+}
+#dashboardContainer .rightSide .usersTable .userImage i{
+       
+        border-radius: 50%;
+}
+#dashboardContainer .rightSide .usersTable table tr td i{
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#dashboardContainer .rightSide .usersTable table tr td .editUserBtn:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transform: rotate(25deg);
+}
+
+
+
+/*--------------------------
+ Dashboard Right side - End 
+---------------------------*/
+
+
+
+/*----------------------
+    Edit form - start
+------------------------*/
+
+.editUser {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+}
+
+#registerSectionEdit {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#registerSectionEdit .container {
+    position: relative;
+    width: 400px;
+    height: 460px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    border-radius: 10px;
+}
+
+#registerSectionEdit .container .formBox h3 {
+    margin: 20px 0px 40px 0px;
+    font-size: 24px;
+}
+#registerSectionEdit .container form .formBox {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#registerSectionEdit .container form .formBox:nth-child(1) {
+    display: flex;
+    background-color: white;
+    z-index: 3;
+}
+
+#registerSectionEdit .container form .formBox:nth-child(2) {
+    display: none; /* Hidden by default */
+    background-color: white;
+    z-index: 2;
+}
+
+#registerSectionEdit .container form .formBox:nth-child(3) {
+    display: none; /* Hidden by default */
+    background-color: white;
+    z-index: 1;
+}
+
+#registerSectionEdit .container form .formBox div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#registerSectionEdit .container form .formBox label{
+    width: 64%;
+    text-align: start;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: var(--midiumFontWeight);
+}
+#registerSectionEdit .container form .formBox input {
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    font-size: 14px;
+    font-weight: var(--midiumFontWeight);
+    outline: none;
+    text-shadow: 3px 3px 2px rgba(36, 79, 248, 0.25);
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+#registerSectionEdit .container form .formBox .button {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+#registerSectionEdit .container form .formBox .button button:nth-child(1) {
+    margin-right: 10px;
+}
+
+#registerSectionEdit .container form .formBox .button button {
+    margin: 10px 0px;
+    width: 40%;
+    padding: 5px 0px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    background-color: rgb(105, 105, 231);
+    font-weight: var(--largeFontWeight);
+    font-size: var(--midiumFont);
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add transition for hover effect */
+}
+
+#registerSectionEdit .container form .formBox .button button:hover {
+    background-color: rgb(85, 85, 191); /* Change color on hover */
+}
+
+.closeEditUser{
+    position: absolute;
+    top:2%;
+    right: 2%;
+    z-index: 9;
+    cursor: pointer;
+}
+
+
+  /*----------------------
+      Edit form - start
+  ------------------------*/

@@ -1,0 +1,118 @@
+/* IMPORT COMMON CSS */
+@import url("theme.css");
+
+
+#checkout{
+    width: 100%;
+    height: 100%;
+}
+h2{
+    margin-bottom: 10px;
+}
+#checkout .billingAddress{
+    width: 98%;
+    padding: 30px;
+}
+#checkout .shippingAddress{
+    width: 98%;
+    padding: 30px;
+}
+ .tableDataContainer{
+    width: 98%;
+    overflow-x: auto;
+    overflow-y: auto;
+    scrollbar-width: none;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+ .usersTable{
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+ .usersTable table{
+    width: 100%;
+    min-width: 1200px;
+}
+ .usersTable table td, th{
+    padding: 10px;
+    height: 40px;
+}
+  .usersTable table td{
+    height: 30px;
+    width: 100%;
+}
+
+ .usersTable table th{
+    position: sticky;
+    top: 0px;
+    z-index: 5;
+}
+ .usersTable #table .tableHeading{
+    background-color: rgb(12, 168, 196);
+    color: white;
+}
+ .usersTable #table tr{
+    position: relative;
+    z-index: 2;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+ .usersTable table{
+    border-spacing: 0; 
+    border-collapse: collapse;
+}
+ .usersTable td .userProfile{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+}
+.usersTable td .userImage{
+        width: 40px;
+        height: 40px;
+        margin-right: 20px;
+}
+.usersTable .userImage i{
+        border-radius: 50%;
+}
+ .usersTable table tr td i{
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+ .usersTable table tr td .editUserBtn:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transform: rotate(25deg);
+}
+.payment{
+    width: 98%;
+    padding: 30px;
+}
+.tital{
+    width: 300px;
+    height: 50px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font: 30px;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    background-color: rgb(12, 168, 196);
+    padding-left: 10px;
+}
+.detailPayment{  
+    width: 310px;
+    background-color: rgb(224, 234, 243);
+    height: 100px;
+    padding-left: 10px;
+}
+button{
+    margin-left: 30px;
+    margin-bottom: 30px;
+}

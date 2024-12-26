@@ -1,0 +1,238 @@
+/* IMPORT COMMON CSS */
+@import url("../../../../Assets/css/theme.css");
+/*--------------------------
+ Dashboard Right side - start 
+---------------------------*/
+#dashboardContainer .rightSide{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+/* Edit Profile Section */
+#dashboardContainer .rightSide .editProfile{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#dashboardContainer .rightSide .editProfile form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+}
+#dashboardContainer .rightSide .editProfile form h2{
+    width: 90%;
+    display: flex;
+    align-items: start;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#dashboardContainer .rightSide .editProfile form .names{
+    width: 563px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    text-align: center;
+}
+
+#dashboardContainer .rightSide .editProfile form .names div{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+#dashboardContainer .rightSide .editProfile form .names div input{
+    width: 87%;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+#dashboardContainer .rightSide .editProfile form .emailContact{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+#dashboardContainer .rightSide .editProfile form .emailContact div{
+    width: 94%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+#dashboardContainer .rightSide .editProfile form .emailContact div input{
+    width: 96.5%;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+#dashboardContainer .rightSide .editProfile form .birthAgeAndGender{
+    width: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    text-align: center;
+}
+#dashboardContainer .rightSide .editProfile form .birthAgeAndGender div{
+    width: 43.8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+#dashboardContainer .rightSide .editProfile form .birthAgeAndGender div input{
+    width: 92%;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+#dashboardContainer .rightSide .editProfile form .zipAndCity{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+#dashboardContainer .rightSide .editProfile form .zipAndCity div{
+    width: 94%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+
+#dashboardContainer .rightSide .editProfile form .zipAndCity div input{
+    width: 96.5%;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+#dashboardContainer .rightSide .editProfile form .stateAndCountry{
+    width: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+#dashboardContainer .rightSide .editProfile form .stateAndCountry div{
+    width: 44%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+#dashboardContainer .rightSide .editProfile form .stateAndCountry div input{
+    width: 92.2%;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+
+#dashboardContainer .rightSide .editProfile form input{
+       padding: 10px;
+       font-size: 15px;
+       font-weight: 400;
+       margin-bottom: 20px;
+       box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;   
+       outline: none;
+       border: none;
+}
+#dashboardContainer .rightSide .editProfile  form p{
+    margin: 8px 0px;
+    font-size: var(--largeFont);
+    font-weight: var(--midiumFontWeight);
+} 
+
+/*--------------------------
+ Dashboard Right side - End 
+---------------------------*/
+
+
+
+/*---------------------
+ Media Query - start 
+----------------------*/
+
+
+@media screen and (max-width: 625px) {
+    #dashboardContainer .rightSide .editProfile form .names{
+        width: 100%;
+        flex-direction: column;
+    }
+    #dashboardContainer .rightSide .editProfile form .birthAgeAndGender{
+        width: 100%;
+        flex-direction: column;
+    }
+    #dashboardContainer .rightSide .editProfile form .stateAndCountry{
+        width: 100%;
+        flex-direction: column;
+    }
+    #dashboardContainer .rightSide .editProfile form .emailContact{
+        width: 100%;
+        flex-direction: column;
+    }
+    #dashboardContainer .rightSide .editProfile form .zipAndCity{
+        width: 100%;
+        flex-direction: column;
+    }
+    #dashboardContainer .rightSide .editProfile form .stateAndCountry{
+        width: 100%;
+        flex-direction: column;
+    }
+    #dashboardContainer .rightSide .editProfile form .names div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    #dashboardContainer .rightSide .editProfile form .birthAgeAndGender div{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #dashboardContainer .rightSide .editProfile form .stateAndCountry div{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #dashboardContainer .rightSide .editProfile form .emailContact div{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #dashboardContainer .rightSide .editProfile form .zipAndCity div{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #dashboardContainer .rightSide .editProfile form input{
+        width: 87% !important;
+    }
+    #dashboardContainer .rightSide .editProfile form div p{
+        width: 90%;
+        text-align: start;
+    }
+}
+
+
+/*---------------------
+ Media Query - End 
+----------------------*/
+

@@ -1,0 +1,364 @@
+/* import comman css */
+@import url("../../../../Assets/css/theme.css");
+
+/*----------------------
+    Edit form - start
+------------------------*/
+#editFormContainer {
+  height: 100vh;
+  width: 100%;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
+}
+
+#editFormContainer .formContainer {
+  width: 450px;
+  height: 550px;
+  padding: 20px;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.formContainer form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 14px;
+}
+
+form div {
+  width: 90%;
+  margin-bottom: 12px;
+}
+
+form label{
+  font-size: 15px;
+}
+
+
+form div input,
+form div textarea,
+form div select {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+form div input:focus,
+form div textarea:focus,
+form div select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+.btns{
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btns button {
+  padding: 10px 10px;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  /* box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); */
+  transition: all 0.3s ease;
+  width: 45%;
+  text-align: center;
+}
+
+.btns .submit{
+  background-color: #1dc544;
+}
+.btns .submit:hover {
+  background-color: #218838;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+.btns .submit:active {
+  background-color: #1dc544;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(0);
+}
+
+.btns .submit:focus {
+  outline: none;
+  box-shadow: 0 0 5px 2px rgba(40, 167, 69, 0.5);
+}
+
+.btns .close{
+  background-color: #ff4d4d;
+}
+.btns .close:hover {
+  background-color: #d43f3f;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+.btns .close:active {
+  background-color: #ff4d4d;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(0);
+}
+
+.btns .close:focus {
+  outline: none;
+  box-shadow: 0 0 5px 2px rgba(40, 167, 69, 0.5);
+}
+
+/*----------------------
+    Edit form - start
+------------------------*/
+
+/*--------------------------
+ Dashboard Right side - start 
+---------------------------*/
+#dashboardContainer .rightSide {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rightSide .categoryContainer {
+  height: 100%;
+  width: 93%;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+}
+
+.categoryContainer .categoryBox {
+  height: 550px;
+  width: 350px;
+  grid-gap: 1vw;
+  margin: 1vw;
+  background-color: #fcfbfb;
+  border-radius: 10px;
+  overflow-y: scroll;
+  flex-basis: 300;
+  scrollbar-width: none;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+.categoryBox .imageBox {
+  height: 45%;
+  width: 100%;
+  position: relative;
+  border-bottom: 1px solid silver;
+}
+.categoryBox .imageBox img {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+
+.categoryBox .categoryDetailBox {
+  height: 55%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.categoryDetailBox .categoryName{
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #333;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+  margin-left: 20px;
+}
+.categoryDescriptionTital{
+  margin-left: 20px;
+}
+.categoryDescriptionTital{
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+.categoryName p, .categoryDetail p, .uploadFile p{
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 400;
+}
+.categoryDetailBox span {
+  font-weight: normal;
+  color: #555;
+  font-size: 1.2rem;
+  letter-spacing: 0.3px;
+}
+.categoryDetailBox .categoryDescription {
+  margin: 0 1vw;
+  font-size: 1.1rem;
+  color: #666;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+}
+.categoryDetailBox .categoryEditDelete {
+  margin: 0 1vw;
+  height: 13%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.categoryEditDelete button,
+.categoryEditDelete a {
+  width: 40%;
+  font-size: 1vw;
+  font-weight: 600;
+  border: none;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  cursor: pointer;
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+  text-decoration: none; 
+  color: inherit; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.categoryEditDelete button:hover,
+.categoryEditDelete a:hover {
+  background-color: #e0e0e0;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  transform: translateY(-3px);
+}
+
+.categoryEditDelete .categoryEdit img,
+.categoryEditDelete .categoryDelete img {
+  height: 25px;
+  width: 25px;
+  background-color: white;
+  border-radius: 50%;
+  margin-right: 0.7vw;
+  padding: 3px;
+  transition: transform 0.3s ease;
+}
+
+.categoryEditDelete .categoryDelete img {
+  padding: 0px;
+  
+}
+
+.categoryEditDelete button:hover img,
+.categoryEditDelete a:hover img {
+  transform: rotate(10deg) scale(1.1);
+}
+
+.categoryEditDelete .categoryEdit {
+  background-color: #f9aa33;
+  color: white;
+  border: 2px solid #f9aa33;
+}
+
+.categoryEditDelete .categoryEdit:hover {
+  background-color: #e08b0f;
+  border-color: #e08b0f;
+}
+
+.categoryEditDelete .categoryDelete {
+  background-color: #ff4d4d;
+  color: white;
+  border: 2px solid #ff4d4d;
+}
+
+.categoryEditDelete .categoryDelete:hover {
+  background-color: #d43f3f;
+  border-color: #d43f3f;
+}
+
+/*--------------------------
+ Dashboard Right side - End 
+---------------------------*/
+
+/*--------------------------------------
+ Dashboard Right side responsive - start 
+---------------------------------------*/
+
+/* @media screen and (max-width: 1246px) {
+  .rightSide .categoryContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+} */
+
+@media screen and (max-width: 1091px) {
+  .rightSide .categoryContainer .categoryBox {
+    height: 500px;
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .rightSide .categoryContainer .categoryBox {
+    height: 550px;
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 787px) {
+  .rightSide .categoryContainer .categoryBox {
+    height: 500px;
+    width: 300px;
+  }
+}
+@media (max-width: 768px) {
+  #editFormContainer .formContainer {
+    width: 90%;
+    padding: 15px;
+  }
+
+  form div {
+    width: 100%;
+  }
+
+  form div input,
+  form div textarea,
+  form div select {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 672px) {
+  .rightSide .categoryContainer {
+    width: 320px;
+    grid-template-columns: 1fr;
+  }
+}
+/*--------------------------------------
+ Dashboard Right side responsive - End 
+---------------------------------------*/

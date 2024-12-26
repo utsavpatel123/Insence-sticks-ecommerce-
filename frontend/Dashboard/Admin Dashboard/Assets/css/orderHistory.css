@@ -1,0 +1,186 @@
+/* IMPORT COMMON CSS */
+@import url("../../../../Assets/css/theme.css");
+
+/*--------------------------
+ Dashboard Right side - start 
+---------------------------*/
+#dashboardContainer .rightSide {
+    width: 80%;
+    height: 89vh;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.rightSide .orderHistoryBox {
+    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    border-radius: 6px;
+    margin-top: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.orderHistoryBox ul {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    position: relative;
+}
+
+.orderHistoryBox #headerOflist {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: rgb(12, 168, 196);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;
+}
+
+.orderHistoryBox ul li {
+    min-height: 50px;
+    width: 100%;
+    position: relative;
+    list-style: none;
+    display: flex;
+    text-align: center;
+    align-content: flex-start;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.orderHistoryBox ul li div {
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
+    font-weight: 900;
+    width: 100%;
+    position: relative;
+    justify-content: center;
+}
+
+.listOfHistory div {
+    font-weight: 400 !important;
+}
+
+.action .actionbox {
+    height: 100%;
+    border-left: 1px solid silver;
+    /* border-radius: 12px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    transition: all ease 0.5s;
+}
+
+.action .actionbox div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 30%; */
+    font-size: 13px;
+}
+.action .actionbox div a{
+    font-size: 13px;
+}
+.selectStatus{
+  border: 1px solid rgb(201, 195, 195);
+  outline: none;
+  border: none;
+  position: absolute;
+  opacity: 0;
+}
+.selectStatusBox{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+
+/*--------------------------
+ Dashboard Right side - end 
+---------------------------*/
+
+/*--------------------------
+ Dashboard - End 
+---------------------------*/
+
+
+/*---------------------
+ Media Query - start 
+----------------------*/
+@media screen and (max-width:1100px) {
+    .action .actionBtn .dots {
+        height: 5px; 
+        width: 5px;  
+        
+    }
+}
+@media screen and (max-width: 990px) {
+
+    #dashboardContainer .rightSide {
+        height: 90vh;
+        width: 100%;
+    }
+
+    .rightSide .orderHistoryBox {
+        width: 100%;
+    }
+}
+
+/* Responsive for 775px */
+@media (max-width: 775px) {
+    #orderHistoryBox {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    #orderHistoryBox ul li {
+        font-size: 14px;
+        padding: 8px 0;
+    }
+    
+    #orderHistoryBox ul li div {
+        display: block; /* Ensure divs inside li are block elements */
+        width: 100%; /* Full width for divs */
+        overflow: visible; /* Prevent hidden content */
+    }
+}
+
+/* Responsive for 566px */
+@media (max-width: 566px) {
+    .orderHistoryBox ul {
+        /* height: 90vh; */
+        flex-direction: row;
+        overflow-x: scroll; 
+        overflow-y: hidden;
+    }
+    .orderHistoryBox ul li {
+        min-width: 70px;
+        height: 99%;
+        margin-right: 12px;
+        flex-direction: column;
+        align-items: center;
+        /* overflow: hidden; */
+        justify-content: space-around;
+    }
+    
+    .action .actionbox {
+        border-left: none;
+    }
+}
+
+
+/*---------------------
+ Media Query - End 
+----------------------*/
+

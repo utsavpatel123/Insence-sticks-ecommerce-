@@ -1,0 +1,332 @@
+/* IMPORT COMMON CSS */
+@import url("../../../../Assets/css/theme.css");
+
+
+/*----------------------
+ Edit Address Popup - start 
+-----------------------*/
+#editAddressPopup{
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    z-index: 3;
+    transition: .5s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    z-index: 10;
+}
+#editAddressPopup.removeEditUserAddressPopup{
+    display: flex;
+}
+#editAddressPopup .container{
+    position: relative;
+    width: 400px;
+    height: 500px;
+    background-color: #fff;
+}
+ #editAddressPopup .container i{
+    margin-top: 10px;
+    margin-right: -340px;
+    cursor: pointer;
+    font-size: 30px;
+}
+#editAddressPopup .container .formBox h3{
+    margin: 20px 0px 40px 0px;
+    font-size: 24px;;
+}
+#editAddressPopup .container form .formBox{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+#editAddressPopup .container form .formBox:nth-child(1){
+    z-index: 3;
+    background-color: white;
+  }
+ #editAddressPopup .container form .formBox:nth-child(2){
+    z-index: 2;
+    background-color: white;
+}
+ #editAddressPopup .container form .formBox:nth-child(3){
+    z-index: 1;
+    background-color: white;
+}
+
+ #editAddressPopup .container form .formBox input{
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    font-size: 14px;
+    font-weight: var(--midiumFontWeight);
+    outline: none;
+    text-shadow: 3px 3px 2px rgba(36, 79, 248, 0.25);
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+ #editAddressPopup .container form .formBox select{
+    width: 65%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    font-size: 14px;
+    font-weight: var(--midiumFontWeight);
+    outline: none;
+    text-shadow: 3px 3px 2px rgba(36, 79, 248, 0.25);
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+#editAddressPopup .container form .formBox .redio{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 50px;
+}
+ #editAddressPopup .container form .formBox .redio input{
+    box-shadow: none;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+}
+ #editAddressPopup .container form .formBox .button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+#editAddressPopup .container form .formBox .button button:nth-child(1){
+    margin-right: 10px;
+}
+
+
+/*----------------------
+ Edit Address Popup - End 
+-----------------------*/
+
+
+/*----------------------
+ Add Address Popup - start 
+-----------------------*/
+#addressPopup{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#addressPopup .container{
+    position: relative;
+    width: 400px;
+    height: 500px;
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#addressPopup .container .formBox h3{
+    margin: 20px 0px 40px 0px;
+    font-size: 24px;
+}
+#addressPopup .container form .formBox{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+#addressPopup .container form .formBox:nth-child(1){
+    z-index: 3;
+    background-color: white;
+  }
+#addressPopup .container form .formBox:nth-child(2){
+    z-index: 2;
+    background-color: white;
+}
+#addressPopup .container form .formBox:nth-child(3){
+    z-index: 1;
+    background-color: white;
+}
+
+#addressPopup .container form .formBox input{
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    font-size: 14px;
+    font-weight: var(--midiumFontWeight);
+    outline: none;
+    text-shadow: 3px 3px 2px rgba(36, 79, 248, 0.25);
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+#addressPopup .container form .formBox select{
+    width: 65%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    font-size: 14px;
+    font-weight: var(--midiumFontWeight);
+    outline: none;
+    text-shadow: 3px 3px 2px rgba(36, 79, 248, 0.25);
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+#addressPopup .container form .formBox .redio{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 50px;
+}
+#addressPopup .container form .formBox .redio input{
+    box-shadow: none;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+/*----------------------
+ Add Address Popup - End 
+-----------------------*/
+
+
+
+/*--------------------------
+ Dashboard Right side - start 
+---------------------------*/
+#dashboardContainer .rightSide{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+#dashboardContainer .rightSide .userContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+}
+#dashboardContainer .tableDataContainer{
+    width: 98%;
+    overflow-x: auto;
+    overflow-y: auto;
+    scrollbar-width: none;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#dashboardContainer .rightSide .usersTable{
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+#dashboardContainer .rightSide .usersTable table{
+    width: 100%;
+    min-width: 1200px;
+}
+#dashboardContainer .rightSide .usersTable table td, th{
+    padding: 10px;
+    height: 40px;
+}
+#dashboardContainer .rightSide .usersTable table td{
+    height: 30px;
+}
+
+#dashboardContainer .rightSide .usersTable table th{
+    position: sticky;
+    top: 0px;
+    z-index: 5;
+}
+#dashboardContainer .rightSide .usersTable #table .tableHeading{
+    background-color: rgb(12, 168, 196);
+    color: white;
+}
+#dashboardContainer .rightSide .usersTable #table tr{
+    position: relative;
+    z-index: 2;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+#dashboardContainer .rightSide .usersTable table{
+    border-spacing: 0; 
+    border-collapse: collapse;
+}
+#dashboardContainer .rightSide .usersTable td .userProfile{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+}
+
+#dashboardContainer .rightSide .usersTable td .userImage{
+        width: 40px;
+        height: 40px;
+        margin-right: 20px;
+}
+#dashboardContainer .rightSide .usersTable .userImage i{
+        border-radius: 50%;
+}
+#dashboardContainer .rightSide .usersTable table tr td i{
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#dashboardContainer .rightSide .usersTable table tr td .editUserBtn:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transform: rotate(25deg);
+}
+
+
+
+/*--------------------------
+ Dashboard Right side - End 
+---------------------------*/
+
+
+
+/*---------------------
+ Media Query - start 
+----------------------*/
+
+@media screen and (max-width: 450px) {
+    #addressPopup .container,  #editAddressPopup .container{
+        width: 100vw;
+        height: 100vh;
+        box-shadow: none;
+    }
+    #addressPopup .container .formBox, #editAddressPopup .container .formBox{
+        width: 100%;
+        height: 100%;
+    }
+    #addressPopup .container form .formBox input,  #editAddressPopup .container form .formBox input{
+      width: 80%;       
+    }
+}
+
+/*---------------------
+ Media Query - End 
+----------------------*/
+

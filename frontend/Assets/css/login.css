@@ -1,0 +1,106 @@
+/* IMPORT COMMON CSS */
+@import url("theme.css");
+
+
+/*------------------
+  Login - start 
+-------------------*/
+#loginSection{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 0px;
+}
+#loginSection .container{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset; */
+    border-radius: 10px;
+}
+#loginSection .container h3{
+    margin: 20px 0px 40px 0px;
+    font-size: 24px;
+    font-weight: 600;
+    color: rgb(12, 168, 196);
+    text-transform: uppercase;
+}
+#loginSection .container input{
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    outline: none;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;      
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: .6px;
+}
+#loginSection .container button{
+    margin: 50px 0px 30px 0px;
+}
+#loginSection .container .forgetPasswordLink{
+    width: 65%;
+    display: flex;
+   justify-content: start;
+   align-items: center;
+   text-align: center;
+}
+#loginSection .container .forgetPasswordLink a{
+    font-size: var(--smallFont);
+    color: rgb(12, 168, 196);
+}
+#loginSection .container .newCreateAccountLink{
+    width: 100%;
+}
+#loginSection .container .newCreateAccountLink a{
+    color: rgb(12, 168, 196);
+    font-size: var(--midiumFont);
+}
+
+/*------------------
+  Login - End 
+-------------------*/
+
+/*----------------------
+     media Query - Start 
+-----------------------*/
+
+
+/*------------
+ Login - start
+----------- */
+@media screen and (max-width: 450px) {
+    #loginSection{
+        width: 100%;
+        height: 100%;
+    }
+    #loginSection .container{
+        width: 100%;
+        height: 100%;
+        box-shadow: none;
+    }
+    #loginSection .container input{
+      width: 80%;
+    }
+    #loginSection .container .forgetPasswordLink{
+      width: 80%;
+    }
+  }
+  /*------------
+   Login - End
+  ----------- */
+
+/*----------------------
+     media Query - End 
+-----------------------*/
